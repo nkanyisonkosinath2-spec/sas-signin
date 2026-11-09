@@ -1,0 +1,23 @@
+:root { --red: #E4251B; --deep: #B8160E; --ink: #0A0A0A; --muted: #6B6B6B; --line: #ECECEC; }
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased;
+  background: radial-gradient(120% 60% at 85% 0%, rgba(255, 106, 90, 0.55) 0%, rgba(255, 106, 90, 0) 55%),
+              radial-gradient(90% 50% at 0% 100%, rgba(228, 37, 27, 0.45) 0%, rgba(228, 37, 27, 0) 60%),
+              linear-gradient(160deg, #3A0905 0%, #7A100A 45%, #C21C13 100%);
+  min-height: 100vh; min-height: 100dvh; }
+.wrap { min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; padding: 24px 16px calc(24px + env(safe-area-inset-bottom, 0px)); }
+.card { width: 100%; max-width: 420px; background: #FFFFFF; border-radius: 28px; padding: 32px 24px 26px; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center;
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.6) inset; animation: up .6s cubic-bezier(.2, .9, .25, 1) both; }
+.logo { width: 92px; height: auto; border-radius: 18px; background: #FFF; box-shadow: 0 10px 24px -12px rgba(0, 0, 0, 0.35); padding: 8px 12px; }
+h1 { margin: 6px 0 0; font-size: 26px; line-height: 1.15; font-weight: 800; letter-spacing: -0.8px; }
+.sub { margin: 0; font-size: 15px; line-height: 1.5; color: var(--muted); max-width: 30ch; }
+.gbtn { min-height: 52px; display: flex; align-items: center; justify-content: center; margin-top: 6px; width: 100%; }
+.back { display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 56px; border-radius: 16px; background: var(--ink); color: #FFF; font-weight: 700; font-size: 17px; text-decoration: none; box-shadow: 0 10px 22px -12px rgba(0, 0, 0, 0.6); }
+.back[hidden] { display: none; }
+.msg { margin: 0; min-height: 20px; font-size: 14px; line-height: 1.45; color: var(--deep); }
+.trust { list-style: none; margin: 6px 0 0; padding: 14px 0 0; border-top: 1px solid var(--line); width: 100%; display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--muted); }
+.trust li::before { content: "✓"; color: #16A34A; font-weight: 800; margin-right: 8px; }
+.foot { margin: 0; color: rgba(255, 255, 255, 0.75); font-size: 12px; }
+@keyframes up { from { transform: translateY(24px); opacity: 0; } to { transform: none; opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .card { animation: none; } }
