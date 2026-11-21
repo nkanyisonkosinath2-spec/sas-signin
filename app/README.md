@@ -7,3 +7,4 @@ The apps' "Update available" button downloads these files:
 
 To release an update: replace the file here with the new signed APK (same name), wait a few minutes for
 GitHub Pages, then raise the version code in the database (`/app/customer` or `/app/rider`) so phones show the notice.
+- `SASVendor.apk` – vendor (shop) app (currently 1.0, code 1)
