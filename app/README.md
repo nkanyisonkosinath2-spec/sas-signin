@@ -2,7 +2,7 @@
 
 The apps' "Update available" button downloads these files:
 
-- `SendAScooter.apk` – customer app (currently 7.8, code 69)
+- `SendAScooter.apk` – customer app (currently 7.9, code 70)
 - `SASRider.apk` – Rider app (currently 5.11, code 49)
 
 To release an update: replace the file here with the new signed APK (same name), wait a few minutes for
